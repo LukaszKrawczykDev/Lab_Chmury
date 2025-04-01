@@ -1,5 +1,5 @@
 POLECENIE BUDOWY OBRAZU 
-docker build --build-arg VERSION=1.2.3 -t lab5 .
+docker build --build-arg VERSION=1.0.0 -t lab5 .
 
 POLECENIE URUCHAMIAJĄCE SERWER
 docker run -d -p 8080:80 --name lab5-container lab5
