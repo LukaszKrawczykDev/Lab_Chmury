@@ -1,0 +1,9 @@
+POLECENIE BUDOWY OBRAZU 
+docker build --build-arg VERSION=1.2.3 -t lab5 .
+
+POLECENIE URUCHAMIAJĄCE SERWER
+docker run -d -p 8080:80 --name lab5-container lab5
+
+POLECENIE POTWIERDZAJĄCE DZIAŁANIE KONTENERA I POPRAWNE FUNKCJONOWANIE APLIKACJI
+docker ps -a --filter name=lab5-container
+docker logs lab5-container
